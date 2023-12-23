@@ -1,0 +1,14 @@
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/bin/Debug/net7.0/csharpalura
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/bin/Debug/net7.0/csharpalura.deps.json
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/bin/Debug/net7.0/csharpalura.runtimeconfig.json
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/bin/Debug/net7.0/csharpalura.dll
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/bin/Debug/net7.0/csharpalura.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.GeneratedMSBuildEditorConfig.editorconfig
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.AssemblyInfoInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.AssemblyInfo.cs
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.csproj.CoreCompileInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.dll
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/refint/csharpalura.dll
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/csharpalura.genruntimeconfig.cache
+/home/luizhakan/Documentos/csharp/csharpalura/projeto-musical/obj/Debug/net7.0/ref/csharpalura.dll
