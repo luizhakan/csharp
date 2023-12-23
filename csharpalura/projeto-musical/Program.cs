@@ -108,6 +108,7 @@ void MostrarBandas()
 
 void AvaliarBanda()
 {
+    Boolean condicao = true;
     Console.Clear();
     ExibirTituloDaOpcao("* Avaliar banda *");
 
@@ -123,11 +124,33 @@ void AvaliarBanda()
     {
         string bandaEscolhida = bandasRegistradas.ElementAt(escolha - 1).Key;
 
-        Console.Write($"Avalie a banda {bandaEscolhida}: ");
+        do
+        {
+            Console.Write($"Avalie a banda {bandaEscolhida}: ");
+            int nota = int.Parse(Console.ReadLine()!);
+            bandasRegistradas[bandaEscolhida].Add(nota);
+            Console.WriteLine($"A nota {nota} foi atribuida com sucesso a banda {bandaEscolhida}!");
 
-        int nota = int.Parse(Console.ReadLine()!);
-        bandasRegistradas[bandaEscolhida].Add(nota);
-        Console.WriteLine($"A nota {nota} foi atribuida com sucesso a banda {bandaEscolhida}!");
+            Console.Write("Deseja adicionar mais uma nota? [S/N]: ");
+            string escolha2 = Console.ReadLine()!;
+
+            if (escolha2 == "S" || escolha2 == "s")
+            {
+                condicao = true;
+            }
+            else if (escolha2 == "N" || escolha2 == "n")
+            {
+                condicao = false;
+            }
+            else
+            {
+                Console.WriteLine("Opção inválida!");
+                Thread.Sleep(2000);
+                Console.Clear();
+                AvaliarBanda();
+            }
+        } while (condicao);
+
         Thread.Sleep(4000);
         Console.Clear();
         ExibirOpcoesDoMenu();
@@ -142,7 +165,34 @@ void AvaliarBanda()
 void ExibirMedia()
 {
     Console.Clear();
-    Console.WriteLine("Media de bandas");
+    ExibirTituloDaOpcao("* Media de bandas *");
+    foreach (var banda in bandasRegistradas)
+    {
+        if (banda.Value.Count == 0)
+        {
+            Console.WriteLine($"{banda.Key}: Nenhuma avaliação");
+        }
+        else
+        {
+            Console.WriteLine($"{banda.Key}: {banda.Value.Average()}");
+        }
+    }
+
+    Console.Write("Deseja voltar ao menu? [S/N]: ");
+    string escolha = Console.ReadLine()!;
+    if (escolha == "S" || escolha == "s")
+    {
+        ExibirOpcoesDoMenu();
+    }
+    else if (escolha == "N" || escolha == "n")
+    {
+        ExibirMedia();
+    }
+    else
+    {
+        Console.WriteLine("Opção inválida!");
+        ExibirMedia();
+    }
 }
 
 void Sair()
