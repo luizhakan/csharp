@@ -1,21 +1,14 @@
-﻿string mensagem = "🇸​​​​​🇨​​​​​🇷​​​​​🇪​​​​​🇪​​​​​🇳​​​​​ 🇸​​​​​🇴​​​​​🇺​​​​​🇳​​​​​🇩​​​​​";
-string mensagemBoasVindas = "Bem vindo ao Screen Sound";
+﻿// List<string> listaDasBandas = new List<string>{"U2", "The Beatles"};
 
-List<string> listaDasBandas = new List<string>{"U2", "The Beatles"};
+Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
 
-void ExibirLogo()
-{
-    Console.WriteLine("*********************");
-    Console.WriteLine(mensagem);
-    Console.WriteLine(mensagemBoasVindas);
-    Console.WriteLine("*********************");
-};
-
+bandasRegistradas.Add("Linkin Park", new List<int> { 10, 8, 6 });
+bandasRegistradas.Add("The Beatles", new List<int>());
 
 void ExibirOpcoesDoMenu()
 {
     Console.Clear();
-    ExibirLogo();
+    ExibirTituloDaOpcao("* Bem vindo ao Screen Sound *");
     Console.WriteLine("\n1 - Registrar uma banda");
     Console.WriteLine("2 - Mostrar todas as bandas");
     Console.WriteLine("3 - Avaliar uma banda");
@@ -52,20 +45,25 @@ void ExibirOpcoesDoMenu()
 void RegistrarBanda()
 {
     Console.Clear();
-    Console.WriteLine("Registro de bandas");
+    ExibirTituloDaOpcao("* Registro de bandas *");
     Console.Write("Nome da banda: ");
     string nomeDaBanda = Console.ReadLine()!;
-    listaDasBandas.Add(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda, new List<int>());
 
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Console.Write("Adicionar outra banda? [S/N]: ");
     string escolha = Console.ReadLine()!;
 
-    if (escolha == "S" || escolha == "s") {
+    if (escolha == "S" || escolha == "s")
+    {
         RegistrarBanda();
-    } else if (escolha == "N" || escolha == "n") {
+    }
+    else if (escolha == "N" || escolha == "n")
+    {
         ExibirOpcoesDoMenu();
-    } else {
+    }
+    else
+    {
         Console.WriteLine("Opção inválida!");
         Console.Clear();
         RegistrarBanda();
@@ -75,24 +73,32 @@ void RegistrarBanda()
 void MostrarBandas()
 {
     Console.Clear();
-    Console.WriteLine("Listagem de bandas");
-    
+    ExibirTituloDaOpcao("* Listagem de bandas *");
+
     // for (int i = 0; i < listaDasBandas.Count(); i++) {
     //     Console.WriteLine($"{listaDasBandas[i]}");
     // }
 
-    listaDasBandas.ForEach(Console.WriteLine);
+    foreach (string banda in bandasRegistradas.Keys)
+    {
+        Console.WriteLine($"{banda}");
+    }
 
     Console.Write("Deseja voltar ao menu? [S/N]: ");
 
     string escolha = Console.ReadLine()!;
 
-    if (escolha == "S" || escolha == "s") {
+    if (escolha == "S" || escolha == "s")
+    {
         ExibirOpcoesDoMenu();
-    } else if (escolha == "N" || escolha == "n") {
+    }
+    else if (escolha == "N" || escolha == "n")
+    {
         Console.Clear();
         MostrarBandas();
-    } else {
+    }
+    else
+    {
         Console.WriteLine("Opção inválida");
         Thread.Sleep(2000);
         Console.Clear();
@@ -103,8 +109,35 @@ void MostrarBandas()
 void AvaliarBanda()
 {
     Console.Clear();
-    Console.WriteLine("Avaliação de bandas");
+    ExibirTituloDaOpcao("* Avaliar banda *");
+
+    int i = 1;
+    foreach (var banda in bandasRegistradas)
+    {
+        Console.WriteLine($"{i} - {banda.Key}");
+        i++;
+    }
+
+    Console.Write("Escolha o número da banda que deseja avaliar: ");
+    if (int.TryParse(Console.ReadLine(), out int escolha) && escolha >= 1 && escolha <= bandasRegistradas.Count)
+    {
+        string bandaEscolhida = bandasRegistradas.ElementAt(escolha - 1).Key;
+
+        Console.Write($"Avalie a banda {bandaEscolhida}: ");
+
+        int nota = int.Parse(Console.ReadLine()!);
+        bandasRegistradas[bandaEscolhida].Add(nota);
+        Console.WriteLine($"A nota {nota} foi atribuida com sucesso a banda {bandaEscolhida}!");
+        Thread.Sleep(4000);
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
+    else
+    {
+        Console.WriteLine("Escolha inválida. Por favor, escolha um número válido.");
+    }
 }
+
 
 void ExibirMedia()
 {
@@ -116,6 +149,15 @@ void Sair()
 {
     Console.Clear();
     Console.WriteLine("Saindo...");
+}
+
+void ExibirTituloDaOpcao(string titulo)
+{
+    int quantidadeDeLetras = titulo.Length;
+    string asteriscos = string.Empty.PadLeft(quantidadeDeLetras, '*');
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos);
 }
 
 ExibirOpcoesDoMenu();
