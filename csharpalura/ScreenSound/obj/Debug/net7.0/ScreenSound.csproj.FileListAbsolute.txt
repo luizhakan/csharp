@@ -1,0 +1,14 @@
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/bin/Debug/net7.0/ScreenSound
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/bin/Debug/net7.0/ScreenSound.deps.json
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/bin/Debug/net7.0/ScreenSound.runtimeconfig.json
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/bin/Debug/net7.0/ScreenSound.dll
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/bin/Debug/net7.0/ScreenSound.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.GeneratedMSBuildEditorConfig.editorconfig
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.AssemblyInfoInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.AssemblyInfo.cs
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.csproj.CoreCompileInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.dll
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/refint/ScreenSound.dll
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ScreenSound.genruntimeconfig.cache
+/home/luizhakan/Documentos/csharp/csharpalura/ScreenSound/obj/Debug/net7.0/ref/ScreenSound.dll
