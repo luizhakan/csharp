@@ -1,0 +1,14 @@
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/bin/Debug/net7.0/DevCast
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/bin/Debug/net7.0/DevCast.deps.json
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/bin/Debug/net7.0/DevCast.runtimeconfig.json
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/bin/Debug/net7.0/DevCast.dll
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/bin/Debug/net7.0/DevCast.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.GeneratedMSBuildEditorConfig.editorconfig
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.AssemblyInfoInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.AssemblyInfo.cs
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.csproj.CoreCompileInputs.cache
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.dll
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/refint/DevCast.dll
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.pdb
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/DevCast.genruntimeconfig.cache
+/home/luizhakan/Documentos/csharp/csharpalura/DevCast/obj/Debug/net7.0/ref/DevCast.dll
